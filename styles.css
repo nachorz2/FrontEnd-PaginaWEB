@@ -6,9 +6,19 @@ h2 {color: #46484c;
 b{color: #8b8b8bcc;
 
 }
+.actions a{
+    color: #67b54b;
+}
 button{
-    background-color: #03e5f5;
-    color: rgb(250, 250, 250);
+    background-color: #67b54b;
+    color: white;
+    background-color: #67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
 
 }
 body{background-image: url("../../../../../Tere/Pictures/fondo.png");
@@ -30,8 +40,9 @@ li{
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
-    height: 100%;
+    height: 45px;
     line-height: 45px;
+    font-family: sans-serif;
   }
 
   .logo {
@@ -50,7 +61,21 @@ li{
   
   .actions {
     width: 15%;
-    text-align: right;
+    box-align: left;
     font-size: 14px;
     font-weight: 600;
+  }
+  .actions >*{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .container{
+      margin: 10px;
+      text-align: center;  }
+
+  .menu-item {
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
   }
