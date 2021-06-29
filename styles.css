@@ -450,4 +450,66 @@ h4{
   text-decoration: none;
 }
 
- 
+ /** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  .navbar, .actions{
+    display: none;
+  }
+ h1{
+   font-size: 20px;
+ }
+ main {
+  margin-top: 130px;
+}
+
+.promo {
+  flex-direction: column;
+  max-width: 90%;
+}
+.explanatory-video > video {
+  width: 100%;
+}
+
+.publish {
+  margin-top: 10px;
+}
+
+.publish > h3 {
+  font-size: 25px;
+  line-height: 1.2;
+}
+.banner > img{
+  width: 100%;
+}
+.publish > form {
+  flex-direction: column;
+  display: flex;
+}
+
+.publish > form > div {
+  height: 50px;
+  margin-top: 10px;
+}
+
+.publish > form > div > input {
+  width: 80%;
+  margin-top: 10px;
+}
+
+}
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+  
+}
