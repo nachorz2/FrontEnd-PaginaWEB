@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matcha</title>
+      <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <section class="fixed-header"> 
+  <!--<section class="fixed-header"> 
       <header class="header"> 
         <a href="./index.html" class="logo">
         <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="logoheader">
@@ -27,7 +33,50 @@
         <button class="menu-item">Try Free Trial</button>
     </div>
     </header>
-    </section> 
+    </section>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+          alt="Matcha"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Platform</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///C:/Users/Tere/Documents/Nacho/CursoFullStackBEDU/matcha/pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a>Sign In</a>
+          <button class="menu-item">Start free trial</button>
+        </form>
+      </div>
+    </nav>
     <main>
      <h1>Mi primer etiqueta</h1>
      <h2>linea dos</h2>
@@ -35,15 +84,46 @@
      <h4>linea cuatro</h4>
      <h5>linea cinco</h5>
      <h6>linea seis</h6>
-     <p><b>para poner texto </b> y texto normal 	
-        &#128571;  </p>
+     <p><b>para poner texto </b></p>
         <figure class="banner">
         <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="capterra">  
      <!--<input type="text"><br>-->
     </figure>
     </main>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZkAAAB7CAMAAACRgA3BAAAA8FBMVEX///8AAAD/mQD/lwD/lQDKysri4uLBwcExMTGzs7Ovr6/7+/v29vaZmZkHBwfu7u45OTlNTU3W1tZFRUXl5eXQ0NAtLS3c3Nzx8fGPj496enpRUVEXFxclJSVYWFg+Pj6fn59paWmlpaUdHR1ycnISEhK8vLyGhoZ+fn7//fdXV1dgYGCTk5MnJyf/nwD/rkb/5sb/89//yYb/79r/48D/vmz/umH/oin/+e3/16D/rjv/yI7/27L/skb/tVf/oxv/w3v/xHX/rlH/ozf/pyP/06n/yI//3a7/6MT/t2n/r1f/0pj/woT/v2f/ulr/0pUqweZZAAAS8ElEQVR4nO1daUPiPBBWKKBSuRHEg1MQceUUkEXBVdfXdXf9///mbQuUJDNp0kI5XJ+PENpJnmSuTMLODgI1lSxcnkSKF6Hd0OlRtFTwpYJYOzloT/NpSKbCwhaqneemU75CxpTypHSwkJS2kU4lJ1LHEos9KBGT7H2wnIme7jI4vbpMWnY7SIH4Ipk5KU6fkS3tY7/0laLTFmfRjE+yO8H9UhxIWby6jFn/LOyXBXcaGUgd1+JToXcv9mqZsnBUOcOjFvKRi6n00UzAYox9Gba7834f+rk/K1+QLUOB2ecHEYbhAvPucO6CbZEWdFJDoMSV8rTAn8LpOPdnEEcp3mP810XYvGQ1p2L0iw9ngxA+Zp5ylsO5CfqilsKeXXKmRooZ3osJh/4afEaUGrhyBLY4CqDvmEsZOLGW8pjHbc7ydyxK+EMS+TO8fZzLTfCKaTptGfgm+RR/XijtHqaPtJXGtjOUSiyEPeIsOZe4gr+lwuuijpRYygiHW3aGWiOKTV/1EO3UBHmOUvEfMQ1zxseH+FMOwO8PpORFlw3KTID3iJktULkrNM/XaAUpKSuoUlicGT+yxknAUTV+tcc0y1kQoyk75ud8A0MDW+QYM35goGfYm1jXIN9Y8DSJvJR5V5gpcxTZHOhyR5kp8x9SJn+sIiaBA6TTCDOqhbXNGj+yIEZbmigvaVZh85FxgRkZrXKC6BSMGb/VQ0gPU56YmZYUMHNt9QTdWnGV3QRJ8BINeRtSFpbOjJwiPZdixkph7O5ezV9tS+YQCBoAMym+LtNRTOykBRo7isy9SztS7kJzvBgzgqlkIg/WGsKMhS7TYdorMLLWuBIzw/G6Zqjw7d8M0L8S9IYFtFULMcNGBnwcSzAjmJfZ6S9V1qsTgV00gBkR1cWU8JU1tn9htn8igFBxEWbUrPwv2ZAEMFMQTrLpghfOXxaseQVECC31kUVYMAU7roJlKJbSJjN5x7/dY9IQgJnDc9EjJj6eiiQbtIiwlDvIZfCpnWVebVMbyoFZmCra6CiTOzjMoB3YjbAK3x4zlAsRs/VTZk4AZsT+1kRjIEsmdD0bez8aQTCekyvMMAEXMqxn17O8YwpzdS5Y/07WhhuIkNFuEEkIfbs21KXvEjFAtD4DzIhxZKgzGIpHyfmKOYtMrOsKM3TQloZjEye9LywnBlJJB/EIgiy65KgfI5xemW9HfAPaP3PAjDH3fUDlX9FqAKGGiTa5zERr5wIv5CIS4Tg9tG+VhDLQUiLUACcJRxBT2fTbYQvSQQnDPlKLhsvMWb5yydFsumsKIlvWgKnQXmXpFjgzkXI4raphPz+oCuWTYQ2pS2zWXlERDYhci2zAA0cPTdFAYPr6jNqfgdPiSPA95VlymDk6CGuTS02g5k/X5Xn2Q5CWg1mJkAQz89wnb0lFzJmVQnzSKNV5kOwBqgou7bjUHuc+JhodTcG5xYxRnv3+lLQHODMnZv8wH1pfs2y0/g0kehPwh3QDbOjJCYsnnPaIF6VgzoB2AFmVGwVSJoFWPJPZvfZjWUpaD0Lh4szboR26Jl+BMXNFTDzEXuhJHlZJIslEaAno7xFmiuS4Yq7N7inlOsElHbFkBkoJtf2FDDOYni/STeCqumYeAnNNZ8S3KDOk+4KEsbq9SJ3TU6K8AwCfTPcZYYb2rDCNQfcOrkva3MWu6OmBZDyhjynBDBZlXzChFBw3kF7IgybEMzBm6FUJF82R/rGaisX2D0vRyd7nCSI+FI1ezQgztOxppP/0I6BXzDgimpTJ/etSdKJ8QO5GA0w8iJmJYb4HE0lB4UPgOXBoiamJMHNKkw+3f5llq6YC6EYtnI0iZrJ0gyDcrYky7wCJZNZFFEoJXUgxM8hOPEjYwgUP5wXcbiFCD4QZ9glAjguh6AbsM8OaAeiZsqoaGJqI3TouB8xgu0jfWFUFG7H7wdi6Ops/BmGG3T0CIwyXJQrIDF2OBZnJMU+AcSBrzkD/V8AMmq5h3XFkuxfWtyBbuPN1jTDD9g345ZLMQNdKxAwbE0G/mVVIwBSzaVMhbDOjYg4zyFAnYCtYb4jsUc5tPGQGhMkgkS7BTMK3X4DhtYgZdkUAZkLsvIPMWJdJQilFHiQAtkd6Ct4KvcZTpEgQev1zcwWZuWJjYKhTeEKn/ZonVKlxU3EiZlinFljRIjvvgGwSzOhSHlTOuVJaM4MG/1BRQZWH+SZIsGh+B5kBCxPqFEzioO+6dCLYcxQxw447GAVgZwEzcWtmggGxlJbMJDC/DKlKghEPpmftMcO6P8gsYVuovkOplLWIGXbcwZuP2AIKO8yogUOpDXJLZrDgP4K0g25lFJEMSUCZ/EFmQGGPiJnwsWxNtoCZEDvu4M1AI8gzkziW3ZO3YgbbdgphtVSQwSvkuUhW0lSMkBmQNLZmJiZbALnrBjNAaXCYSVpWatGwYAZJoaI1akiWe/cceS7igJvu94LMhG1Vc62LmYSN2WPJDLahB6q1DMAFWkOeiySocrPvFmMmaW9H1C4zwu05OWZ8mNXmg88Mlsgs4qX8kENJZsxMwULM2C1sWg8zliW5CLjMoME/kmTXgSS9kOcmYZmW6YAtwoy9Mz+7a2LGdsUZlxnxzv8cjpkxkwALMMMvxCrGa6VSBeqQdTDDJ2YiJRxuHjOYsdrjndmRYwY5xrUEZtBgePciW/H5E2E16CBv5gYzeCn+Rfw4OZVSOm+G1q5yzyBCO4P5Zq6smRQmaDFHBIu2c80uMINKeVYgpJRlJoE5zPwKKMjMCbK8EGYW9gDA+U4d19SwLM7Mwl6zipQShK6poZdlJo/0N4u2NIBs+mFeI3xmbvadU2YQXXbKuCkbwAyS/WAjdklmsEIeNPifAuYAMH8e8fbM4XfKDBIisPlIOG1WzUwQlu+csbk5OWbQnX/85OsE0F3YQwIfxHaZbDtkBlmGIEmxfmaQhQ1KAeWYwQ5UszUJFGAQhe3PIAJaZDSlmMmDz2D1DExQrJiZoIyU0BIhzGABwjfL3VNk6iJ3qCA60vzOGTMJ6K7DWBi2WTEzSJUo2OIKytSbwULOXWT1UUBOISNWCcbqp/MnOGIGzogQ9Alhd1bMDLSvcMczDFc2YCaIGRnu5QMTJOBvkDwODIPn5cPOmIFcwzgqCHuzYmagFYbDmYKuDOgJlkZga5RZIEchYPAThB7c3Fo7YyYPPoIbrshROHpcXWcGKiooJWIPWGbQ4D9T3i8HfCk+P1bFFzOkocKfq1tnzMAINwdei+RFaBvoOjNQSliMh9hghpmw5SUFob3aoc+PEARHDZYchUEbQt06YwYq0Rx4LbKnRmtat5lJw2QllBLZ12d8KInd0NOTS2BEEPcDBDRwNRKnVJwxY5HumSGMnBCnG7nNDFKMB1Q9VtSeo1rIXUalocTczQdXLIj48qAJ4fA5YwbKBU6mYEle+pCk28wgp4+AlNjeH3Uc0M5NDyfU0MEBYG8wQU5qEpp0WWsmy2jnNLrDSw2962sGilBjxgaJy7QQkhQD3+vggbxjLwUHiekffDbpOzpjBjGKzFvxbTXKN3KbmTC0M2yGBK/cIJWuvfuEqHWRB1/SSzYIQylyu8cZM8hUo9/KOf564bdq475vxpQ58i5hmK9/ZPQEyJm/hfY9RE0MaMHi5NfOmEE8GqoY3Me7Bo/U4a4zgxUokq/g3o4xVypBS5cZA3GRF/RgqQwFzJFQCR9nzGBRMTFqPn5/iKe7zkweeT8RMAT49wuZQ4QkMgQgkv3YZRUmb0k4RhHKVi8rb6ajYPQ6GLO6uobYbXKdGdzh3Z9ImbS8YGcmiX1miNJr9DLWst4FNYZFSXRRgTNmUvg9R/FS5ThzZX3V1XyH1nVmOLdOZg0pLYU0C10WYgbP60TypXwUGyMme+Nwf8bODZoMTE3hOjNYFYAsfMtgZidv44dssSf06KWYkbu3E4XpHrm/p2m7VHGOg6Uwk7BxbyK73+OQGfsSmzAld58ZLPcih9llHgsyY+MWT3ARkUNm5BZNDprA7DxfuILaGZmS5lAOetfmCWkeM6EQz5oyh69klUse7Ao5ZUYV3ECmIwcHP0vIvQJmkMwUwD6c2PM/iIDMRDMHAV9Sh88XKFwCVtljcXmxBLvs/VoLMbPjF942qjuBzKQtkXmrVZyfEd5kWdRNPZOkIRQLycxF7TiAVG+o5esaEZuAA4sy93DWkA0ex8yIcn1HhndDu/SXK801GxBok6KRL0lTUpLJPZOZULTs5158pvoD5uYy/Aca8bGqGnocy/lZgAOrVXM+fRnpnTB7OKs5c2a5v5KftiYjH6r/U2biBeFh9nThChdRnK8GZ5YnMi1wfoabHds9nf+LUMxc6ey234pOA5a5nuvZ/L+gzCTWKVPdr+eh4j6pv1JTfXqUh/3pQ8wqsIpw/htooTNnCU6OvETlDSfUFIEA8B5JYW1EhNXHQFkhJ4gTnP3iSyS7WWR1UfowI/g3KBK+yiFO4gH3FvoCj/U0SHODCjeQkiVKDVIlsD2VzTBT3683Qe4pCLK8gh1rUGQJZg24aAsdxlgJZJOyFUYg48jp+YL/2MeHuo9lvuM5i+IoVg/Dq1fTluPjL5cIexM99EGN7M+fVTA9HQxQQGoYVWGLNN2C9y9/qXKNmLUnOUTKVO3bsa0/gLQJ1XfMzOKKQEsm6b5hfqGw94mk/teOrk24JSGR1CKRmJ0rg5YNNXBYuSzlM5eVHDbQX/jCJ0S/3Rm+fB/fdrvdP+OfL51Gc90SfWGn2u88/ngaeRQCXk+vfvtaXbdo/zQaP+s6E16vh4L2gaLctPrrFu9fRf9u4FEYTkh6lPr2L5v23fYp5mprZEGLAaWxbiEXRUNb+w/bxU215RXxojHzsW4xF8WLovVi1Nqitd+oi3nR+jRet5yLojlSdLV8c7ct3NwpytzWU6CZeVy3oAujoVOjcTMYbgU3VYMQwz32jHq9p6e6gaennsek7HOsGW3VDJSJOzPorFsUGWjSPt/ffn8ZdhrtPjGZmo2XW0LNKa31ibg09LvKVDsMOpu/bqo6ON+16yY1yt1KpXIJ1e50snmV7lasGy6apkLbfq95gveZHlCU5+2wNxzczxaN8lmSAK8e0+NRfmyxInicdsN781mY2WkPTEWg+dDv2xV7zjGe9kJ52OaVT8M0NgY3vcf2ugVyhNsZMz/XLcky8U44nVrE0B2uWyAZVIfffxOCzuyMdyuEl0anR8Vq3qePTVfWzVZPjzofzA9upk6mZ1vVMQf9ByolpRmc2032ojtv050AZSZldeYA9NYqmBu481DpJ21CjlrtTTSm1XbrRjF9/ffpp52ZmfkMGQAG7Wcmk6stnF93m6bVqq+/yI0zM6xszZjZTv9FgO9w/1bT5MPNUdzNYVffZSbmznj6TfXX1MzUN20qLQfYBoji7b1tRN1DtXPbo5LKmvqd6bKd9mgi+PZvm3FQbXkUlhrd5HgfXtarJZrD27lxmYlVn8tkmpnNWeDLRhvdN9T9gXqrvR5N0W/ePYzANrPXQ27H/p0wo9yvRcLVoPqOl6boNmcwfl01OdXO77pXYQ2gNlWeKa9+2sC7ya7+4ug/ejjb7bpeGz12misyO832x8CrYPNE8+iplq/TfaYfm2AQ3QRwoBnF9qvl/obBfx9vT5xKGa8yYKze76kye3VbqvXjtWdVbafnRW66Q5cKifuNTmswqYfFeemxqbH+xDPzPrsiz4ahrwXaliVEGjuep1+Pd23uDrADVPvDVrfOemH0a5H62Kln9smSmVz0W1ZVqpO1Y5SyPN++DBe2PdV25+X7w42xVKxqY71jZKHeG8wo3cVE2CL0b5HoBl09Xs/oqf743mn3+31bFFW1H7RftXViFPZbcGJA8TxgYVXT8Fg+XZbZEu1bC8XCLB99/Sie5/rb75/vr51G09K/7jcbnde7n7+7g8lRC1DYj06ALl58cTdZMp81/OegORaWeDMMKfORHj0P7v92bx8fx+NWqzUejx///L2/H4xuyIaST1Y8t5w0RNWoaPqHdNkM7Q+JMm8OS7Pxp04ggXpXiUcpyi23WKltlJrefMokswDVu7qkUnMHmp/8bqEb/+j12Z5PUmVmF/3GvchRc48Wz8AyJ9TvebXl+bKysdg4tH+O5I3C0mjRwxfBanhRNPb+geDfAv3hg1VmwAVelFFdnELVKxj+4RUzRfPl3oY7tRArmtF/fpex6lqY+bkzzLJotn64b3I04/KjJels9f/77AlmaVQb78/cfOMyWFGUm4/G13A7Q/PubeSCXtN1WO9tC89cbxKqzca450G2Gx2zYlyD0Wp8zuKXVaM//F332Mmx8JeKctP9OfxiZYmo9huth6eR1yE9OimeXr370baXpP6CHKrt4ct44JFPi5kZtZvB+KXzZVfcRr/z8fhm3qGEUGQS4hk9/Xgbv//3pb5WiGq/3W4M31uPf++fRwwz+rbAn9Zdp9H+/Mrrf3zhmiC/r++wAAAAAElFTkSuQmCC" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://about.fb.com/ltam/wp-content/uploads/sites/14/2018/12/Facebook-2.jpeg?fit=1920%2C1080" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
     <article class="publish">
-    <form action="">
+      <form>
+        <div class="form-group">
+          <label for="formControlRange">Example Range input</label>
+          <input type="range" class="form-control-range" id="formControlRange">
+        </div>
+      </form>
+    <!--<form action="">
       <div>
         <label for="name">Nombre</label>
         <input type="text" id="name" name="fname">
@@ -53,9 +133,9 @@
         <input type="password" name="Contra" id=""> 
         <button type="submit">Try it now</button>
       </div>
-      </form>
+      </form>-->
     </article>
-    <section class="promo">
+  <section class="promo">
         <article class="explanatory-video">
         <video
           controls
@@ -294,5 +374,20 @@
     </article>
   </div>
 </section>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>

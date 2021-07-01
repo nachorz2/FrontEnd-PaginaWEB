@@ -45,12 +45,11 @@ li{
   }
   
   .navbar {
-    width: 70%;
     text-align: center;
-    color: Green;
+    color: #025157;
     font-weight: 500;
+     /* background-color: black;  */
   }
-  
   .actions {
     width: 15%;
     box-align: left;
@@ -68,7 +67,7 @@ li{
 
   .menu-item {
     color: white;
-    background-color: #67b54b;
+    background-color: #025157;
     padding-left: 14px;
     padding-right: 14px;
     padding-top: 12px;
@@ -92,8 +91,9 @@ li{
   }
   
   .publish > form {
-    display: flex;
-  }
+    width: 80%;
+    margin-left: 100px ;
+    }
   
   .publish > form p {
     color: #025157;
@@ -452,67 +452,69 @@ h4{
 
  /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-  .navbar, .actions{
+
+  main {
+    margin-top: 130px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .banner > img {
+    width: 100%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > form > input {
+    width: 90%;
+  }
+
+  .publish > form > button {
+    width: 92%;
+  }
+
+  .explanatory-video > video {
+    width: 100%;
+  }
+
+  .publish {
+    margin-top: 10px;
+  }
+
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .feature-image {
     display: none;
   }
- h1{
-   font-size: 20px;
- }
- main {
-  margin-top: 130px;
-}
-
-.promo {
-  flex-direction: column;
-  max-width: 90%;
-}
-.explanatory-video > video {
-  width: 100%;
-}
-
-.publish {
-  margin-top: 10px;
-}
-
-.publish > h3 {
-  font-size: 25px;
-  line-height: 1.2;
-}
-.banner > img{
-  width: 100%;
-}
-.publish > form {
-  flex-direction: column;
-  display: flex;
-}
-
-.publish > form > div {
-  height: 50px;
-  margin-top: 10px;
-}
-
-.publish > form > div > input {
-  width: 80%;
-  margin-top: 10px;
-}
-.features {
-  grid-template: repeat(4, 1fr) / 1fr;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.feature-image {
-  display: none;
-}
 
 }
 /** dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
-  
+  .feature-image {
+    display: none;
+  }
 }
 /** dispositivos medianos (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
-  
+
 }
 /** dispositivos grandes (desktops) */
 @media (min-width: 992px) and (max-width: 1199px) {
