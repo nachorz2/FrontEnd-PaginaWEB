@@ -118,12 +118,6 @@
       </a>
     </div>
     <article class="publish">
-      <form>
-        <div class="form-group">
-          <label for="formControlRange">Example Range input</label>
-          <input type="range" class="form-control-range" id="formControlRange">
-        </div>
-      </form>
     <!--<form action="">
       <div>
         <label for="name">Nombre</label>
@@ -165,19 +159,15 @@
               professionally written articles and build your email list faster with our
               powerful conversion tool.
             </p>
-            <form>
+            <form class="signup-form">
               <p>Start publishing today:</p>
               <div>
-                <input type="text" placeholder="Enter email" />
-                <button>Start My Trial</button>
+                <input type="email" placeholder="Enter email" required />
+                <button type="submit">Start My Trial</button>
               </div>
             </form>
           </article>
-      </section>
-
-
-    
-     
+      </section>     
      <section class="features">
       <article class="feature-card">
         <div class="feature-content">
@@ -294,6 +284,9 @@
         </figure>
       </article>
       <article class="stories-carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
               <div class="card">
                 <div class="card-media">
                   <figure>
@@ -318,8 +311,73 @@
                   <button>See Case Study</button>
                 </div>
               </div>
-            
-        
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-media">
+                  <figure>
+                    <img src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg" alt="Seato Summit worker">
+                  </figure>
+                  <div class="company">
+                    <img src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png" alt="Seato Summit Logo">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h4>Sea to Summit</h4>
+                  <h3>
+                    Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New
+                    Subscribers 820%
+                  </h3>
+                  <div class="results">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_audiences.png" alt="Audience icon">
+                    <p>500% increase in traffic from social media</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button>See Case Study</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="card-media">
+                  <figure>
+                    <img src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png" alt="Mambe workers">
+                  </figure>
+                  <div class="company">
+                    <img src="https://getmatcha.com/wp-content/uploads/2019/06/mambe-logo-1.png" alt="Mambe">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h4>Mambe Waterproof Blankets</h4>
+                  <h3>
+                    How Mambe Increased Conversions by 327%, Reduced CPL by 60%
+                  </h3>
+                  <div class="results">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_target.png" alt="Target icon">
+                    <p>+327% more popup conversions at a 60% lower cost</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button>See Case Study</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleFade" data-slide-to="0" class=""></li>
+            <li data-target="#carouselExampleFade" data-slide-to="1" class=""></li>
+            <li data-target="#carouselExampleFade" data-slide-to="2" class="active"></li>
+          </ol>
+        </div>
       </article>
     </section>
 <section class="how-does-it-work">
@@ -491,5 +549,6 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
+  <script src="./app.js"></script>
 </body>
 </html>
