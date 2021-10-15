@@ -2,9 +2,8 @@
     color: #ACF8DF;
 }
 button{
-    background-color: #ACF8DF;
+    background-color: #038E92;
     color: white;
-    background-color: #ACF8DF;
     padding-left: 14px;
     padding-right: 14px;
     padding-top: 12px;
@@ -13,7 +12,7 @@ button{
     border-radius: 5px;
 
 }
-body{background: #fffbf7}
+body{background: white}
 
 
 
