@@ -528,3 +528,80 @@ h4{
 @media (min-width: 1200px) {
   
 }
+
+
+
+element.style {
+}
+@media (max-width: 599.98px)
+<style>
+.dNtnqY > .UniversalCheckout__StyledConnectionBoxSwitch-sc-d5kfjp-3 {
+    margin-right: 18px;
+}
+.gsxJwI {
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 19px 10px 10px;
+    height: 88px;
+    width: 131px;
+    display: flex;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    position: relative;
+    box-shadow: rgb(27 49 66 / 15%) 14px 14px 50px;
+    z-index: 2;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, menu, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body {
+    overflow-x: hidden;
+    min-width: 320px;
+    color: rgb(28, 28, 32);
+}
+body {
+    line-height: 1;
+}
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
+.gsxJwI::before {
+    display: block;
+    content: "";
+    position: absolute;
+    inset: -4px;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+.gsxJwI::after {
+    display: block;
+    content: "";
+    position: absolute;
+    inset: 0px;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
