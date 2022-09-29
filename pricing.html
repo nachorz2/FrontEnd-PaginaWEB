@@ -68,6 +68,41 @@
         making the Matcha Platform free forever to all new users who sign up
         during COVID-19.
       </p>
+      <script src="https://www.paypal.com/sdk/js?client-id=AepHKp7G05kgp1Dkk3oVi5r6Gyjdp3v0S0gGBIJArbDh_7E5dozJGpYa0qulmoY1Z9-lMqNBAI_Egwin
+&currency=MXN"></script>
+    <!-- Set up a container element for the button -->
+    <div id="paypal-button-container"></div>
+    <script>
+      paypal.Buttons({
+        // Order is created on the server and the order id is returned
+        createOrder: (data, actions) => {
+          return fetch("/api/orders", {
+            method: "post",
+            // use the "body" param to optionally pass additional order information
+            // like product ids or amount
+          })
+          .then((response) => response.json())
+          .then((order) => order.id);
+        },
+        // Finalize the transaction on the server after payer approval
+        onApprove: (data, actions) => {
+          return fetch(`/api/orders/${data.orderID}/capture`, {
+            method: "post",
+          })
+          .then((response) => response.json())
+          .then((orderData) => {
+            // Successful capture! For dev/demo purposes:
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+            const transaction = orderData.purchase_units[0].payments.captures[0];
+            alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+            // When ready to go live, remove the alert and show a success message within this page. For example:
+            // const element = document.getElementById('paypal-button-container');
+            // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+            // Or go to another URL:  actions.redirect('thank_you.html');
+          });
+        }
+      }).render('#paypal-button-container');
+    </script>
     </main>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
